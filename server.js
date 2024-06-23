@@ -7,7 +7,9 @@ const prisma = new PrismaClient()
 
 const app = express()
 app.use(express.json())
-app.use(cors())
+app.use(cors({
+    origin: 'https://vite-project-eight-psi.vercel.app/' 
+  }));
 
 
 app.post('/users', async (req, res) => {
@@ -66,5 +68,13 @@ app.listen(3000, () => console.log('Server running on port 3000'))
 fernando
 
 sZnKV5zromqXqrtP
+
+*/
+
+/* Render
+
+API_project
+
+02a1f2261c766c3342cdb55be7fd47f2
 
 */
